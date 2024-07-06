@@ -6,7 +6,7 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 0
-    path: Assets/Scenes/Btry2.unity
+    path: Assets/Scenes/MainScene.unity
     guid: b1948290d48779e4fba7d77e68173932
   - enabled: 1
     path: Assets/Scenes/360VidScene.unity

@@ -4,18 +4,21 @@ using UnityEngine.XR.Interaction.Toolkit;
 
 public class CanvasManager : MonoBehaviour
 {
-    public float distanceFromCamera = 15f;
+    public float distanceFromCamera = 5f;
 
     public Canvas canvas;
-    private Camera mainCamera;
+    public Camera mainCamera;
+    public UIController uIController;
     private bool isVisible = false;
 
     void Start()
     {
-        mainCamera = Camera.main;
+        // mainCamera = Camera.main;
         
         // Initially hide the canvas
         SetCanvasVisibility(false);
+
+        Capture(); // Dummy
     }
 
     void ToggleCanvas()
@@ -27,6 +30,14 @@ public class CanvasManager : MonoBehaviour
         {
             PositionCanvasInFrontOfCamera();
         }
+    }
+
+    public void Capture()
+    {    
+        ScreenCapture.CaptureScreenshot(Application.dataPath + "/ScreenCaptureOut.png");
+        uIController.LoadGeneratedImage();
+        uIController.ClearInputField();
+        ShowCanvas();
     }
 
     void ShowCanvas()

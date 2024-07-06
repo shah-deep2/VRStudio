@@ -12,23 +12,9 @@ public class Screenshot : MonoBehaviour
         // targetCamera = GetComponent<Camera>();
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        if(Input.GetKeyDown(KeyCode.Space))
-            Capture();
-        
-    }
-
     private void Capture()
     {    
         ScreenCapture.CaptureScreenshot(Application.dataPath + "/ScreenCaptureOut.png");
-        // Debug.Log("pressed");
-        // Texture2D tex = GetRTPixels();
-        // byte[] bytes = tex.EncodeToJPG();
-        // string path = Application.dataPath + "/Screencapture.jpg";
-
-        // System.IO.File.WriteAllBytes(path, bytes);
     }
 
     private Texture2D GetRTPixels()
