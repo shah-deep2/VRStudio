@@ -1,0 +1,16 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1045 &1
+EditorBuildSettings:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Scenes:
+  - enabled: 0
+    path: Assets/Scenes/Btry2.unity
+    guid: b1948290d48779e4fba7d77e68173932
+  - enabled: 1
+    path: Assets/Scenes/360VidScene.unity
+    guid: 55921893e866ece44a3e5db524afff87
+  m_configObjects:
+    Unity.XR.Oculus.Settings: {fileID: 11400000, guid: 105531a4185503541a7ab33a6ef1b6da, type: 2}
+    com.unity.xr.openxr.settings4: {fileID: 11400000, guid: 8fba97c717059bf40836c95ffa752fc1, type: 2}
