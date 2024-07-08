@@ -1039,7 +1039,7 @@ GameObject:
   - component: {fileID: 1498658796}
   - component: {fileID: 1498658795}
   m_Layer: 5
-  m_Name: Image
+  m_Name: ImageHolder
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1294,7 +1294,7 @@ GameObject:
   - component: {fileID: 1806692980}
   - component: {fileID: 1806692979}
   m_Layer: 5
-  m_Name: InputField (TMP)
+  m_Name: InputBox
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
